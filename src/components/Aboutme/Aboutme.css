@@ -1,0 +1,32 @@
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .section__principal-data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  padding: 5%;
+  width: 60%;
+}
+
+section .section__secondary-data {
+  width: 40%;
+  padding: 5%;
+}
+
+@media screen and (max-width: 640px){
+  section {
+    flex-direction: column;
+  }
+  section .section__secondary-data {
+    min-height: 300px;
+    height: fit-content;
+    order: 1
+  }
+  section .section__secondary-data, section .section__principal-data  {
+    width: 100%;
+  }
+}
