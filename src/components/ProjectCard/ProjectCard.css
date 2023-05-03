@@ -1,0 +1,63 @@
+.project__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+
+  
+  min-width: 300px;
+  aspect-ratio: 2/3;
+  
+  perspective: 1000px;
+  
+  
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.project__card .project__card--inner{
+
+position: relative;
+
+  width:100%;
+  height: 100%;
+
+
+  transform-style: preserve-3d;
+
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.project__card:hover .project__card--inner {
+ transform: rotateY(180deg);
+ -webkit-transform: rotateY(180deg);
+ -moz-transform: rotateY(180deg);
+ -ms-transform: rotateY(180deg);
+ -o-transform: rotateY(180deg);
+}
+
+.project__card .project__card--front{
+  background-color: var(--foreground-color);
+}
+.project__card .project__card--back{
+  background:  var(--shadow-color);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.project__card--front, .project__card--back{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
