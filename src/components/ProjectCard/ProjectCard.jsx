@@ -11,14 +11,15 @@ export const ProjectCard = ({data}) => {
       <div className="project__card--inner">
 
       <div className="project__card--front">
-        FRONT
-        {title}
-        {desc}
-        {img}
+        
+        <div className="project__card-image"/>
+  
+        <h3 className="title">{title}</h3>
 
       </div>
       <div className="project__card--back">
-        BACK
+        {desc}
+        {img}
       </div>
 
 

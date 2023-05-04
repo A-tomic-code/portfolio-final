@@ -15,8 +15,21 @@ section.projects .section__principal-data {
   gap:  var(--gap);
 }
 section.projects .section__secondary-data .projects_grid {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
   gap:  var(--gap)
+}
+
+@media screen and (max-width: 1300px){
+  section.projects .section__secondary-data .projects_grid{
+  grid-template-columns: repeat(2, 1fr);
+
+  }
+}@media screen and (max-width: 500px){
+  section.projects .section__secondary-data .projects_grid{
+  grid-template-columns: repeat(1, 1fr);
+
+  }
 }

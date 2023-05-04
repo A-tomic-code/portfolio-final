@@ -25,7 +25,7 @@ export const PixelBackground = () => {
         top: `${Math.round(Math.random() * 100)}%`,
         left: `${Math.round(Math.random() * 100)}%`,
         transform: `rotate(${Math.random() * 360}deg)`,
-        opacity: Math.random()* 0.7,
+        opacity: Math.random()* 1,
         width: size,
         height: size,
       };
