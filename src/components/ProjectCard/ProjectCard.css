@@ -41,10 +41,11 @@
 .project__card .project__card--front {
   display: flex;
   flex-direction: column;
+  gap: var(--gap);
 
   place-items: center;
 
-  padding: 20% 20%;
+  padding: 25% 20%;
 
   background: url('../../assets/background-projectCard_front.svg');
   background-size: cover;
@@ -53,8 +54,12 @@
 .project__card .project__card--front .project__card-image {
   width: 95%;
   aspect-ratio: 4/3;
-
-  background-color: #999;
+  border-radius: var(--border-radius);
+  border: 1git add px solid gold;
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
 }
 .project__card .project__card--back {
   background: url('../../assets/background-projectCard_back.svg');

@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
-   sodipodi:docname="background-element.svg"
+   sodipodi:docname="background-projectCard_front.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="2.8079686"
-     inkscape:cx="118.41301"
-     inkscape:cy="117.70075"
+     inkscape:zoom="4.065"
+     inkscape:cx="100"
+     inkscape:cy="100"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -37,19 +37,16 @@
      id="defs2">
     <style
        id="style5216"><![CDATA[
-.pixel {
-  fill:#202020;
-  paint-order:stroke markers fill;
-  stroke:#f0de00;
-  stroke-width:0.13;
-  stroke-dasharray:15;
-  stroke-dashoffset:0;
-
+.pixel { 
+    fill:#202020;
+    paint-order:stroke markers fill;
+    stroke:#f0de00;
+    stroke-dasharray:15;
+    stroke-dashoffset:0;
+    stroke-width:0.25;
 }
 
-]]>
-   
-</style>
+]]></style>
   </defs>
   <g
      inkscape:label="Capa 1"

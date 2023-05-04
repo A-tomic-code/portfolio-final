@@ -41,7 +41,7 @@
   fill:none;
   paint-order:stroke markers fill;
   stroke:#f0de00;
-  stroke-width:0.13;
+  stroke-width:0.25;
   stroke-dasharray:15;
   stroke-dashoffset:0;
 }
