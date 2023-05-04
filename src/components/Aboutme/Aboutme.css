@@ -1,12 +1,12 @@
-section {
+section.aboutme {
   display: flex;
   justify-content: space-between;
 }
 
-section .section__principal-data {
+section.aboutme .section__principal-data {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap:  var(--gap);
 
   padding: 5%;
   width: 60%;

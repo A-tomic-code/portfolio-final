@@ -23,7 +23,7 @@ export const SkillsGrid = () => {
       logo: undefined
     },
     {
-      name: "NodeJS",
+      name: "GIT",
       logo: undefined
     },
   ]

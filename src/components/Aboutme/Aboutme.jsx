@@ -3,7 +3,7 @@ import { SkillsGrid } from '../SkillsGrid/SkillsGrid';
 
 export const Aboutme = () => {
   return (
-    <section>
+    <section className="aboutme">
       <div className="section__secondary-data">
         <SkillsGrid></SkillsGrid>
       </div>

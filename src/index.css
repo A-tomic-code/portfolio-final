@@ -13,6 +13,8 @@
   --accent-color: rgb(255, 215, 0);
   --shadow-color: rgba(255, 217, 0, 0.2);
   --border-radius: 5px;
+  --gap: 25px;
+  --padding: 5% 10%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

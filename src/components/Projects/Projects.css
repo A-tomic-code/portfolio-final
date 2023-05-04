@@ -1,0 +1,22 @@
+section.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  gap:  var(--gap);
+}
+
+section.projects .section__secondary-data {
+  width: 100%;
+  height: 100%;
+}
+section.projects .section__principal-data {
+  display: flex;
+  flex-direction: column;
+  gap:  var(--gap);
+}
+section.projects .section__secondary-data .projects_grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap:  var(--gap)
+}
