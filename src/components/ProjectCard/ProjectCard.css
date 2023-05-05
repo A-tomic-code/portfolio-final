@@ -55,7 +55,7 @@
   width: 95%;
   aspect-ratio: 4/3;
   border-radius: var(--border-radius);
-  border: 1git add px solid gold;
+  border: 1px solid gold;
   -webkit-border-radius: var(--border-radius);
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
