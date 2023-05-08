@@ -1,15 +1,15 @@
 import './Header.css';
-import header from '../../../assets/header.svg';
+import developerImg from '../../../assets/developer-image.svg'
 import headerBg from '../../../assets/header-bg.svg';
 import { Navbar } from '../../Navbar/Navbar';
 
 export const Header = () => {
   return (
     <header>
-        <img src={headerBg} className="header_bg" />
+      <img src={headerBg} className="header_bg" />
       <div className="header__content">
+        
         <div className="header-data">
-          <small className="text-secondary">¡Hola!</small>
           <h1>
             ¿Buscas un
             <span className="text-secondary"> desarrollador web</span>?
@@ -18,7 +18,7 @@ export const Header = () => {
         </div>
 
         <img
-          src={header}
+          src={developerImg}
           alt="imagen del desarrollador sonriendo y con los brazos cruzados"
         />
       </div>

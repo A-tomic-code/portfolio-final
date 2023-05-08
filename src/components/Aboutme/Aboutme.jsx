@@ -13,7 +13,7 @@ export const Aboutme = () => {
         <p className="section__subtitle">
           ¡Hola! Soy <span className="text-secondary">Daniel</span>, un
           apasionado{' '}
-          <span className="text-secondary">desarrollador front-end </span>.
+          <span className="text-secondary">desarrollador front-end</span>.
         </p>
         <p className="section__text">
           Con un enfoque en la creación de experiencias web cautivadoras y una

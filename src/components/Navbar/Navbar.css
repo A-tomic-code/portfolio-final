@@ -1,4 +1,6 @@
 nav {
+  position: absolute;
+  bottom: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +8,6 @@ nav {
   width: 100%;
   height: fit-content;
   gap: 18px;
-  margin-top: -20px;
 }
 nav ul {
   display: flex;
@@ -31,10 +32,12 @@ nav ul.collapsed__menu {
 }
 
 
-
 nav ul.collapsed__button {
+  
   width: 56px;
+  
 }
+
 nav ul.collapsed__button button {
   display: flex;
   flex-direction: column;
@@ -86,7 +89,7 @@ nav ul.collapsed__menu {
   justify-content: center;
   align-items: center;
   gap:0;
-  width: 100%;
+  width: 85%;
   height: fit-content;
   opacity: 0;
   background: var(--background-color);
@@ -104,6 +107,7 @@ nav ul.collapsed__menu {
 }
 
 nav ul.collapsed__menu--open{
+  display: flex;
   opacity:1;
 }
 
@@ -126,15 +130,24 @@ nav ul.collapsed__menu .nav__link{
 @media screen and (max-width: 640px) {
   nav {
     flex-direction: column;
+    align-items: end;
+    right: 5%;
+    top: 90%;
   }
-  header nav ul.collapsed__button, header nav ul.collapsed__menu {
+  /* header nav ul.collapsed__menu{
+    display: none;
+  } */
+
+  header nav ul.collapsed__button {
     display: flex;
+    align-self: end;
   }
 
   header nav ul.expanded {
     display: none;
   }
 }
+
 
 @keyframes fade{
   from {
