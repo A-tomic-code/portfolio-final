@@ -2,7 +2,7 @@ import './Projects.css';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
 export const Projects = () => {
 
-  const data = {title:'fuf', desc:'de', img:'pij'}
+  const data = {title:'Titulo del proyecto', desc:'descripcion del proyecto', img:'pij'}
 
   return (
     <section className="projects">

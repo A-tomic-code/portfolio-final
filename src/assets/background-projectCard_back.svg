@@ -25,13 +25,13 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="2.8079686"
-     inkscape:cx="109.50977"
-     inkscape:cy="118.05688"
-     inkscape:window-width="1920"
+     inkscape:cx="134.43883"
+     inkscape:cy="118.76913"
+     inkscape:window-width="960"
      inkscape:window-height="1016"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-x="20"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
@@ -59,17 +59,18 @@
        sodipodi:type="star"
        id="path288"
        inkscape:flatsided="true"
-       sodipodi:sides="6"
+       sodipodi:sides="8"
        sodipodi:cx="9.859868"
        sodipodi:cy="17.529348"
        sodipodi:r1="14.137231"
        sodipodi:r2="15.201324"
        sodipodi:arg1="0.89123703"
-       sodipodi:arg2="1.4148358"
+       sodipodi:arg2="1.2839361"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 18.744415,28.52599 4.7787705,30.721912 -4.1057763,19.725271 0.97532129,6.5327068 14.940966,4.3367844 23.825512,15.333426 Z"
-       transform="matrix(0.53432747,1.799375,-1.5982537,0.6760306,49.32423,-2.911412)"
-       class="pixel card-front" />
+       d="M 18.744415,28.52599 8.3663915,31.587471 -1.1367735,26.413895 -4.198255,16.035872 0.97532129,6.5327068 11.353345,3.4712253 20.85651,8.6448016 23.917991,19.022825 Z"
+       transform="matrix(0.53434393,1.7841784,-1.598303,0.6703212,49.472902,-2.7292706)"
+       class="pixel"
+       style="fill:#202020;fill-opacity:1;stroke:#f0de00;stroke-width:0.220586;stroke-dasharray:17.6468, 2.64703;stroke-dashoffset:0;paint-order:stroke markers fill" />
   </g>
 </svg>

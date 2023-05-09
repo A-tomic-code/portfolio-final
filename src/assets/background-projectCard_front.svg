@@ -24,10 +24,10 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="4.065"
-     inkscape:cx="101.10701"
-     inkscape:cy="122.14022"
-     inkscape:window-width="939"
+     inkscape:zoom="2.0325"
+     inkscape:cx="75.03075"
+     inkscape:cy="104.05904"
+     inkscape:window-width="922"
      inkscape:window-height="1016"
      inkscape:window-x="20"
      inkscape:window-y="20"
@@ -66,8 +66,8 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="M 18.744415,28.52599 8.3663915,31.587471 -1.1367735,26.413895 -4.198255,16.035872 0.97532129,6.5327068 11.353345,3.4712253 20.85651,8.6448016 23.917991,19.022825 Z"
-       transform="matrix(-0.53433682,1.7894192,1.5982817,0.67229017,3.8279374,-2.8928186)"
+       transform="matrix(-0.79791444,1.6884518,1.4787067,0.90548607,8.5605817,-5.9822059)"
        class="pixel"
-       style="fill:#202020;fill-opacity:1;stroke-width:0.220586;stroke-dasharray:17.6468, 2.64703;stroke-dashoffset:0" />
+       style="fill:#202020;fill-opacity:1;stroke-width:0.5;stroke-dasharray:17.6468, 2.64703;stroke-dashoffset:0" />
   </g>
 </svg>
