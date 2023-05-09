@@ -16,6 +16,8 @@
   width: 100%;
   height: 100%;
 
+  padding: 20px;
+
   color: var(--accent-color);
   background-color: var(--foreground-color);
 
@@ -24,6 +26,11 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.skills_grid .skill img{
+  width: 100%;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1000px){

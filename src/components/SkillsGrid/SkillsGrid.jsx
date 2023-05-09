@@ -1,30 +1,39 @@
 import './SkillsGrid.css'
+import reactLogo from '../../assets/logo-react.svg'
+import cssLogo from '../../assets/logo-css.svg'
+import gitLogo from '../../assets/logo-git.svg'
+import sqlLogo from '../../assets/logo-sql.svg'
+import reduxLogo from '../../assets/logo-redux.svg'
+import nodeLogo from '../../assets/logo-node.svg'
+
+
+
 export const SkillsGrid = () => {
 
   const skills = [
     {
       name: "React",
-      logo: undefined
+      logo: reactLogo
     },
     {
       name: "CSS",
-      logo: undefined
+      logo: cssLogo
     },
     {
       name: "SQL",
-      logo: undefined
+      logo: sqlLogo
     },
     {
       name: "Redux",
-      logo: undefined
+      logo: reduxLogo
     },
     {
       name: "NodeJS",
-      logo: undefined
+      logo: nodeLogo
     },
     {
       name: "GIT",
-      logo: undefined
+      logo: gitLogo
     },
   ]
 
@@ -33,7 +42,7 @@ export const SkillsGrid = () => {
     <div className="skills_grid">
 
       {skills.map( skill => {
-        return <div className="skill" key={skill.name}>{skill.name}</div>
+        return <div className="skill" key={skill.name}><img src={skill.logo}/> {skill.name}</div>
         })}
 
     </div>
