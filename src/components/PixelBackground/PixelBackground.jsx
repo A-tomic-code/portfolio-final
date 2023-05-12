@@ -20,7 +20,7 @@ export const PixelBackground = () => {
     let tempPixels = [];
 
     for (let i = 0; i < pixelsCount; i++) {
-      const size = `${Math.round(Math.random() * (300 - 20)) + 20}px`;
+      const size = `${Math.round(Math.random() * (100 - 20)) + 20}px`;
       const pixelStyle = {
         top: `${Math.round(Math.random() * 100)}%`,
         left: `${Math.round(Math.random() * 100)}%`,
