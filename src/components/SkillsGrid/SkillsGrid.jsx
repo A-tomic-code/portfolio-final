@@ -1,51 +1,61 @@
-import './SkillsGrid.css'
-import reactLogo from '../../assets/logo-react.svg'
-import cssLogo from '../../assets/logo-css.svg'
-import gitLogo from '../../assets/logo-git.svg'
-import sqlLogo from '../../assets/logo-sql.svg'
-import reduxLogo from '../../assets/logo-redux.svg'
-import nodeLogo from '../../assets/logo-node.svg'
+import './SkillsGrid.css';
+import { skills } from '../../utils/utils';
+import { AnimatePresence, motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+      
+    },
+  },
+};
 
+const itemVariants = {
+  hidden: {
+    scale: 0.8,
+    opacity: 0,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition:{
+
+      duration:.4
+    }
+  },
+};
 
 export const SkillsGrid = () => {
 
-  const skills = [
-    {
-      name: "React",
-      logo: reactLogo
-    },
-    {
-      name: "CSS",
-      logo: cssLogo
-    },
-    {
-      name: "SQL",
-      logo: sqlLogo
-    },
-    {
-      name: "Redux",
-      logo: reduxLogo
-    },
-    {
-      name: "NodeJS",
-      logo: nodeLogo
-    },
-    {
-      name: "GIT",
-      logo: gitLogo
-    },
-  ]
-
+  const containerRef = useRef(null)
+  const isInView = useInView(containerRef, {once:true})
 
   return (
-    <div className="skills_grid">
-
-      {skills.map( skill => {
-        return <div className="skill" key={skill.name}><img src={skill.logo}/> {skill.name}</div>
-        })}
-
-    </div>
-  )
-
-}
+    <AnimatePresence>
+      {skills && (
+        <motion.div
+          ref={containerRef}
+          className="skills_grid"
+          initial="hidden"
+          animate={isInView ? "visible" : 'hidden'}
+          variants={containerVariants}
+        >
+          {skills.map((skill, index) => (
+            <motion.div
+              className="skill"
+              key={skill.name}
+              variants={itemVariants}
+              custom={index}
+            >
+              <img src={skill.logo} alt={skill.name} />
+              {skill.name}
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+};

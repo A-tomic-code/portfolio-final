@@ -11,9 +11,20 @@
 }
 .background .background-pixel{
   position: absolute;
-  transition: all 19.8s ease-in-out;
+  /* transition: all 19.8s ease-in-out;
   -webkit-transition: all 19.8s ease-in-out;
   -moz-transition: all 19.8s ease-in-out;
   -ms-transition: all 19.8s ease-in-out;
-  -o-transition: all 19.8s ease-in-out;
+  -o-transition: all 19.8s ease-in-out; */
+}
+
+.box{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: var(--shadow-color);
+  /* transition: 50s; */
+  /* clip-path: polygon(30% 0, 70% 0, 100% 50%, 70% 100%, 30% 100%, 0% 50%); */
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
 }

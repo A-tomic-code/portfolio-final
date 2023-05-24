@@ -1,10 +1,35 @@
 import PropTypes from 'prop-types';
-import pixelSVG from '../../assets/background-element.svg';
+import { motion } from 'framer-motion';
 import './PixelBackground.css';
 import { useEffect, useState } from 'react';
 
-export const Pixel = ({ style }) => {
-  return <img src={pixelSVG} className="background-pixel" style={style} />;
+export const Pixel = () => {
+  
+  return (
+    <motion.div
+      className="box"
+      initial={{
+        opacity: Math.random() - .35,
+        scale:Math.random() - .35,
+        top: `${Math.round(Math.random() * 100)}%`,
+        left: `${Math.round(Math.random() * 100)}%`,
+        rotate: `${Math.round(Math.random() * 360)}deg`,
+      }}
+
+      animate={{
+        top: `${Math.round(Math.random() * 100)}%`,
+        left:`${Math.round(Math.random() * 100)}%`,
+        opacity: Math.random() *.5,
+        filter: `blur(70px)`,
+        transition: {
+          duration:30,
+          repeat: Infinity,
+          repeatType: 'reverse',
+          ease: 'linear',
+        }
+      }}
+    />
+  );
 };
 
 Pixel.propTypes = {
@@ -12,46 +37,22 @@ Pixel.propTypes = {
 };
 
 export const PixelBackground = () => {
-  const pixelsCount = 50;
-  const relocatingInterval = 20000;
+  const pixelsCount = 30;
   const [pixels, setPixels] = useState([]);
 
-  const relocatePixels = () => {
+  const locatePixels = () => {
     let tempPixels = [];
 
     for (let i = 0; i < pixelsCount; i++) {
-      const size = `${Math.round(Math.random() * (100 - 20)) + 20}px`;
-      const pixelStyle = {
-        top: `${Math.round(Math.random() * 100)}%`,
-        left: `${Math.round(Math.random() * 100)}%`,
-        transform: `rotate(${Math.random() * 360}deg)`,
-        opacity: Math.random()* 1,
-        width: size,
-        height: size,
-      };
-
-      tempPixels.push(
-        <Pixel style={pixelStyle} key={tempPixels.length}></Pixel>
-      );
+      tempPixels.push(<Pixel key={tempPixels.length}/>);
     }
 
     setPixels(tempPixels);
   };
 
   useEffect(() => {
-    relocatePixels();
-    setTimeout(() => {
-      relocatePixels();
-    }, 10);
-
-    const interval = setInterval(() => {
-      relocatePixels();
-    }, relocatingInterval);
-
-    return () => {
-      clearInterval(interval);
-    };
+    locatePixels();
   }, []);
 
-  return <div className="background">{pixels.map((pixel) => pixel)}</div>;
+  return <div className="background">{pixels.map(pixel => pixel)}</div>;
 };

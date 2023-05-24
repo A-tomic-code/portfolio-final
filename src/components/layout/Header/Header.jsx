@@ -1,12 +1,12 @@
 import './Header.css';
 import developerImg from '../../../assets/developer-image.svg'
-import headerBg from '../../../assets/header-bg.svg';
 import { Navbar } from '../../Navbar/Navbar';
+import {HeaderBg} from './HeaderBg'
 
 export const Header = () => {
   return (
     <header>
-      <img src={headerBg} className="header_bg" />
+      <HeaderBg width="100%" height="100%"/>
       <div className="header__content">
         
         <div className="header-data">

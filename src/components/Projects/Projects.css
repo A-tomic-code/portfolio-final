@@ -1,7 +1,7 @@
 section.projects {
   display: flex;
   flex-direction: column;
-  
+  width: 100%;
 
   gap: var(--gap);
 }
@@ -17,9 +17,10 @@ section.projects .section__principal-data {
   gap: var(--gap);
   padding: 5%;
 }
-section.projects .section__secondary-data .projects_grid {
+
+.section__secondary-data .projects_grid{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px 5%;
+  width: 100%;
 }

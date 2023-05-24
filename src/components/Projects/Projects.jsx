@@ -1,15 +1,17 @@
 import './Projects.css';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
+import { projects } from '../../utils/utils'
 export const Projects = () => {
 
-  const data = {title:'Titulo del proyecto', desc:'descripcion del proyecto', img:'pij'}
 
   return (
     <section className="projects">
       <div className="section__principal-data">
         <h3 className="section__title">Proyectos</h3>
         <p className="section__subtitle">
-        Sumérgete en una <span className="text-secondary">selección de trabajos </span>en los que he participado.
+          Sumérgete en una{' '}
+          <span className="text-secondary">selección de trabajos </span>en los
+          que he participado.
         </p>
         <p className="section__text">
           Explora mis proyectos para ver ejemplos concretos de mi trabajo y
@@ -20,18 +22,12 @@ export const Projects = () => {
       </div>
 
       <div className="section__secondary-data">
-
         <div className="projects_grid">
-          <ProjectCard data={data}></ProjectCard>
-          <ProjectCard data={data}></ProjectCard>
-          <ProjectCard data={data}></ProjectCard>
-          <ProjectCard data={data}></ProjectCard>
-          <ProjectCard data={data}></ProjectCard>
+          {projects.map((item, index) => (
+            <ProjectCard data={item} key={index} />
+          ))}
         </div>
-
       </div>
-
-
     </section>
   );
 };
