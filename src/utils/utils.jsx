@@ -30,7 +30,7 @@ export const projects = [
     ),
   },
   {
-    url: 'https://notforget.netlify.app',
+    url: 'https://notforget.netlify.app/',
     gitUrl: 'https://github.com/A-tomic-code/notes-app',
     img: notforget,
     title: 'NotForget',
