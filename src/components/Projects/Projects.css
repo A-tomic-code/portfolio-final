@@ -21,6 +21,7 @@ section.projects .section__principal-data {
 .section__secondary-data .projects_grid{
   display: flex;
   flex-wrap: wrap;
+  gap: var(--gap);
   justify-content: center;
   width: 100%;
 }

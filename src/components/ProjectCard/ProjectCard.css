@@ -19,6 +19,7 @@
   justify-content: center;
 }.project__card img{
   width: 100%;
+  aspect-ratio: 16/9;
   box-shadow: 0 10px 10px #0003;
 
 }.project__card button{
