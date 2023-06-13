@@ -1,5 +1,6 @@
 import rickYMorty from '../assets/rickYMorty.webp';
 import notforget from '../assets/notforget.png';
+import tictactoe from '../assets/tictactoe.png';
 import reactLogo from '../assets/logo-react.svg';
 import cssLogo from '../assets/logo-css.svg';
 import gitLogo from '../assets/logo-git.svg';
@@ -36,10 +37,9 @@ export const projects = [
     title: 'NotForget',
     desc: (
       <>
-        NotForget es una aplicación de notas que te permite
-        organizar tus pensamientos de manera rápida y sencilla.
-        Esta construida utilizando la popular biblioteca de
-        JavaScript llamada
+        NotForget es una aplicación de notas que te permite organizar tus
+        pensamientos de manera rápida y sencilla. Esta construida utilizando la
+        popular biblioteca de JavaScript llamada
         <span className="text-secondary"> React</span> junto con el poderoso
         sistema de tipos de <span className="text-secondary">TypeScript</span>,
         lo que garantiza un{' '}
@@ -49,6 +49,22 @@ export const projects = [
         </span>
       </>
     ),
+  },
+  {
+    title: 'Tic-tac-toe',
+    desc: (
+      <>
+        Este es un{' '}
+        <span className="text-secondary">proyecto básico de Tic Tac Toe</span>{' '}
+        (Tres en línea) implementado utilizando{' '}
+        <span className="text-secondary">React</span>. El juego permite a dos
+        jugadores enfrentarse en un tablero de 3x3 y tratar de conseguir una
+        línea de tres símbolos iguales.
+      </>
+    ),
+    img: tictactoe,
+    url: 'https://atomic-tictactoe.netlify.app/',
+    gitUrl: 'https://github.com/A-tomic-code/Tic-tac-toe',
   },
 ];
 
