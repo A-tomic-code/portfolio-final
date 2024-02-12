@@ -8,14 +8,8 @@
 	line-height: 1.5;
 	font-weight: 400;
 
-<<<<<<< Updated upstream
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color:var(--background-color);
-=======
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
->>>>>>> Stashed changes
 
 	--background-color: #242424;
 	--background-color-dark: #202020;
