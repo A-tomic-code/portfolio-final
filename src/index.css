@@ -1,45 +1,57 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+:root {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+<<<<<<< Updated upstream
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color:var(--background-color);
+=======
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+>>>>>>> Stashed changes
 
-  --background-color: #242424;
-  --background-color-dark: #202020;
-  --foreground-color: #343434;
-  --accent-color: rgb(255, 215, 0);
-  --shadow-color: rgba(255, 217, 0, 0.2);
-  --border-radius: 5px;
-  --gap: 25px;
-  --padding: 5% 10%;
+	--background-color: #242424;
+	--background-color-dark: #202020;
+	--foreground-color: #343434;
+	--accent-color: rgb(255, 215, 0);
+	--shadow-color: rgba(255, 217, 0, 0.2);
+	--border-radius: 5px;
+	--gap: 25px;
+	--padding: 5% 10%;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	transition: all 500ms;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-  font-weight: 500;
-  letter-spacing: 5px;
-  color: currentColor;
-  text-decoration: inherit;
+	font-weight: 400;
+	color: currentColor;
+	text-decoration: inherit;
 }
 a:hover {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 body {
+<<<<<<< Updated upstream
   margin: 0;
   display: flex;
   place-items: center;
@@ -141,4 +153,9 @@ button:hover{
   button {
     background-color: #f9f9f9;
   }
+=======
+	min-width: 320px;
+	width: 100vw;
+	min-height: 100vh;
+>>>>>>> Stashed changes
 }
