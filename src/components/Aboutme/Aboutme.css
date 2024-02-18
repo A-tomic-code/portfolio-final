@@ -1,8 +1,6 @@
 section.aboutme {
   display: flex;
   justify-content: space-between;
-  
-  padding-bottom: 0;
 }
 
 section.aboutme .section__principal-data {
@@ -10,7 +8,7 @@ section.aboutme .section__principal-data {
   flex-direction: column;
   gap: var(--gap);
 
-  padding: 5% ;
+  padding: 5%;
   width: 60%;
 }
 
