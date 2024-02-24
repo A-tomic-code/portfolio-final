@@ -5,7 +5,7 @@ import { HeaderBg } from "./HeaderBg";
 
 export const Header = () => {
 	return (
-		<header className="h-[1100px] max-w-[1200px] w-full bg-white bg-opacity-5  backdrop-blur-lg rounded-[32px] flex flex-col border border-sky-950 overflow-hidden">
+		<header className="h-[640px] max-w-[1200px] w-full bg-white bg-opacity-5  backdrop-blur-lg rounded-[32px] flex flex-col border border-sky-950 overflow-hidden">
 			<section className="flex w-full h-full justify-evenly items-center gap-4 p-16">
 				<article className="flex flex-col justify-center gap-10 max-w-xl w-2/4  h-full shrink-0 ">
 					<div className="flex flex-col gap-3">

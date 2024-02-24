@@ -1,8 +1,8 @@
-import "./App.css";
-import { Navbar } from "./components/Navbar/Navbar";
-import { SkillsGrid } from "./components/SkillsGrid/SkillsGrid";
-import { Content } from "./components/layout/Content/Content";
-import { Header } from "./components/layout/Header/Header";
+import './App.css'
+import { Navbar } from './components/Navbar/Navbar'
+import { SkillsGrid } from './components/SkillsGrid/SkillsGrid'
+import { Content } from './components/layout/Content/Content'
+import { Header } from './components/layout/Header/Header'
 
 function App() {
 	return (
@@ -18,7 +18,7 @@ function App() {
 			{/* <GridBackground /> */}
 			{/* <DotBackground /> */}
 		</main>
-	);
+	)
 }
 
-export default App;
+export default App
