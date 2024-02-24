@@ -1,11 +1,15 @@
-import { Aboutme } from "../../Aboutme/Aboutme";
-import { Projects } from "../../Projects/Projects";
+import { PageSection } from '../../PageSection/PageSection'
+import { Aboutme } from '../../../sections/Aboutme/Aboutme'
+import { Experience } from '../../../sections/Experience/Experience'
 
 export const Content = () => {
 	return (
-		<div className="flex flex-column bg-gray-200 bg-opacity-5 rounded-[32px]">
-			<Aboutme></Aboutme>
-			{/* <Projects></Projects> */}
+		<div className="flex flex-col gap-5 w-full">
+			<PageSection title="Sobre mi" content={<Aboutme />} />
+			<PageSection
+				title="Mi Experiencia profesional"
+				content={<Experience />}
+			/>
 		</div>
-	);
-};
+	)
+}
