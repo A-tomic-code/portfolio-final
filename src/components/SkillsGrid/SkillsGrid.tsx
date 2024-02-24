@@ -32,7 +32,7 @@ export const SkillsGrid = () => {
 			<InfiniteMovingCards
 				items={SKILLS}
 				direction="left"
-				speed="normal"
+				speed="slow"
 				pauseOnHover={true}
 				className="w-full"
 			/>

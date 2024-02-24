@@ -7,7 +7,6 @@ interface InfiniteMovingCardsProps {
 	items: {
 		name: string
 		logo: string
-		title: string
 	}[]
 	direction?: 'left' | 'right'
 	speed?: 'fast' | 'normal' | 'slow'
@@ -74,7 +73,7 @@ export const InfiniteMovingCards = ({
 			} else {
 				containerRef.current.style.setProperty(
 					'--animation-duration',
-					'80s',
+					'120s',
 				)
 			}
 		}
@@ -83,7 +82,7 @@ export const InfiniteMovingCards = ({
 		<div
 			ref={containerRef}
 			className={cn(
-				'scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
+				'scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_5%,white_95%,transparent)]',
 				className,
 			)}
 		>
@@ -97,11 +96,7 @@ export const InfiniteMovingCards = ({
 			>
 				{items.map((skill) => (
 					<li
-						className="w-[200px] h-[200px] relative flex justify-center items-center rounded-2xl flex-shrink-0 border border-slate-700 p-2"
-						style={{
-							background:
-								'linear-gradient(180deg, var(--slate-800), var(--slate-900)',
-						}}
+						className="w-[150px] h-[150px] relative flex justify-center items-center rounded-2xl flex-shrink-0 border border-slate-700 p-2 bg-white bg-opacity-5  backdrop-blur-lg"
 						key={skill.name}
 					>
 						<div className="w-full h-full relative z-20 flex flex-col justify-center items-center gap-4 ">
