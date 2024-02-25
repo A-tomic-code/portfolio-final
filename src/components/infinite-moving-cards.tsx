@@ -99,7 +99,7 @@ export const InfiniteMovingCards = ({
 						className="w-[150px] h-[150px] relative flex justify-center items-center rounded-2xl flex-shrink-0 border border-slate-700 p-2 bg-white bg-opacity-5  backdrop-blur-lg"
 						key={skill.name}
 					>
-						<div className="w-full h-full relative z-20 flex flex-col justify-center items-center gap-4 ">
+						<article className="w-full h-full relative z-20 flex flex-col justify-center items-center gap-4 ">
 							<span className="w-full h-2/5 shrink-0 ">
 								<img
 									src={skill.logo}
@@ -110,7 +110,7 @@ export const InfiniteMovingCards = ({
 							<span className=" text-2xl text-primary leading-[1.6]font-normal ">
 								{skill.name}
 							</span>
-						</div>
+						</article>
 					</li>
 				))}
 			</ul>

@@ -1,14 +1,17 @@
 // import rickYMorty from "../assets/rickYMorty.webp";
 // import notforget from "../assets/notforget.png";
 // import tictactoe from "../assets/tictactoe.png";
-import reactLogo from "../assets/logo-react.svg";
 // import cssLogo from "../assets/logo-css.svg";
-import gitLogo from "../assets/logo-git.svg";
-import sqlLogo from "../assets/logo-sql.svg";
-import reduxLogo from "../assets/logo-redux.svg";
-import nodeLogo from "../assets/logo-node.svg";
-import phpLogo from "../assets/logo-php.svg";
-import pythonLogo from "../assets/logo-python.svg";
+
+import { ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+import reactLogo from '../assets/logo-react.svg'
+import sqlLogo from '../assets/logo-sql.svg'
+import reduxLogo from '../assets/logo-redux.svg'
+import nodeLogo from '../assets/logo-node.svg'
+import phpLogo from '../assets/logo-php.svg'
+import pythonLogo from '../assets/logo-python.svg'
 
 // export const projects = [
 // 	{
@@ -72,53 +75,63 @@ import pythonLogo from "../assets/logo-python.svg";
 
 export const SKILLS = [
 	{
-		name: "React",
+		name: 'React',
 		logo: reactLogo,
 	},
 	{
-		name: "SQL",
+		name: 'SQL',
 		logo: sqlLogo,
 	},
 	{
-		name: "Redux",
+		name: 'Redux',
 		logo: reduxLogo,
 	},
 	{
-		name: "NodeJS",
+		name: 'NodeJS',
 		logo: nodeLogo,
 	},
 	{
-		name: "PHP",
+		name: 'PHP',
 		logo: phpLogo,
 	},
 	{
-		name: "Python",
+		name: 'Python',
 		logo: pythonLogo,
 	},
-];
+]
 
 export const NAV_LINKS = [
 	{
-		label: "Contáctame",
-		onClick: () =>
-			(window.location.href = "mailto:danielvazquezheredia1994@gmail.com"),
-	},
-	{
-		label: "Visita mi LinkedIn",
-		onClick: () =>
-			(window.location.href = "https://www.linkedin.com/in/atomic-code/"),
-	},
-	{
-		label: "Ver mi CV",
+		label: 'Contáctame',
 		onClick: () =>
 			(window.location.href =
-				"https://drive.google.com/file/d/10DMZGwyldC51ZQJ6YJSSThLEBT-haazk/view?usp=sharing"),
+				'mailto:danielvazquezheredia1994@gmail.com'),
 	},
-];
+	{
+		label: 'Visita mi LinkedIn',
+		onClick: () =>
+			(window.location.href = 'https://www.linkedin.com/in/atomic-code/'),
+	},
+	{
+		label: 'Ver mi CV',
+		onClick: () =>
+			(window.location.href =
+				'https://drive.google.com/file/d/10DMZGwyldC51ZQJ6YJSSThLEBT-haazk/view?usp=sharing'),
+	},
+]
 
-import { ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
+export const EXPERIENCE = [
+	{
+		title: 'Full Stack Developer',
+		company: 'Compas3',
+		date: '2023 - 2024',
+		description:
+			'Desarrollo e implementación de nuevas funcionalidades en una plataforma que permite a los usuarios dar clases de Inglés, utilizando tecnologías como React, NodeJS, SQL, entre otras.',
+	},
+]
+
+// -------------------------  ----------------------------- //
 
 export function cn(...inputs: ClassValue[]) {
-	return twMerge(clsx(inputs));
+	return twMerge(clsx(inputs))
 }

@@ -1,10 +1,19 @@
-// import { useState } from "react";
+import { NAV_LINKS } from '../../utils/utils'
 
-import { NAV_LINKS } from "../../utils/utils";
+interface NavbarProps {
+	bgClear: boolean
+}
 
-export const Navbar = () => {
+export const Navbar = ({ bgClear }: NavbarProps) => {
 	return (
-		<nav className=" bg-stone-900 bg-opacity-50 backdrop-blur-lg border-gray-700 w-full sticky top-0 z-50 shadow-lg ">
+		<nav
+			className={`backdrop-blur-md w-full shadow-lg transition-colors duration-500 border-gray-500 border-opacity-40 ${
+				bgClear
+					? 'bg-primary bg-opacity-10 border-b '
+					: 'bg-stone-900 bg-opacity-50 border-b-0'
+			}  
+			`}
+		>
 			<div className="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
 				{/* <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
 					<img
@@ -16,6 +25,7 @@ export const Navbar = () => {
 						Flowbite
 					</span>
 				</a> */}
+
 				{/* <button
 					data-collapse-toggle="navbar-dropdown"
 					type="button"
@@ -40,14 +50,21 @@ export const Navbar = () => {
 						/>
 					</svg>
 				</button> */}
-				<div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+				<div
+					className="hidden w-full md:block md:w-auto"
+					id="navbar-dropdown"
+				>
 					<ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border-gray-700 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
 						{NAV_LINKS.map((link, index) => (
 							<li key={index}>
 								<a
 									href="#"
 									onClick={link.onClick}
-									className="block py-2  hover:text-gray-100 text-primary"
+									className={`block py-2   transition-all duration-300 ${
+										bgClear
+											? 'text-gray-200 hover:text-gray-500'
+											: 'text-primary hover:text-gray-100'
+									}`}
 								>
 									{link.label}
 								</a>
@@ -57,5 +74,5 @@ export const Navbar = () => {
 				</div>
 			</div>
 		</nav>
-	);
-};
+	)
+}
