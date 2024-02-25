@@ -115,7 +115,8 @@ export const NAV_LINKS = [
 	{
 		label: 'Visita mi LinkedIn',
 		onClick: () =>
-			(window.location.href = 'https://www.linkedin.com/in/atomic-code/'),
+			(window.location.href =
+				'https://www.linkedin.com/in/danielvazquez94/'),
 	},
 	{
 		label: 'Ver mi CV',

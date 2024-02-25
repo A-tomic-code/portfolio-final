@@ -1,5 +1,3 @@
-'use client'
-
 import React, {
 	createContext,
 	useState,
@@ -29,8 +27,8 @@ export const CardContainer = ({
 		if (!containerRef.current) return
 		const { left, top, width, height } =
 			containerRef.current.getBoundingClientRect()
-		const x = (e.clientX - left - width / 2) / 25
-		const y = (e.clientY - top - height / 2) / 25
+		const x = (e.clientX - left - width / 2) / 15
+		const y = (e.clientY - top - height / 2) / 15
 		containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`
 	}
 
@@ -85,7 +83,7 @@ export const CardBody = ({
 	return (
 		<div
 			className={cn(
-				'max-h-[450px] max-w-[350px] [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]',
+				'max-h-[500px] max-w-[350px] [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d]',
 				className,
 			)}
 		>
@@ -94,6 +92,17 @@ export const CardBody = ({
 	)
 }
 
+interface CardItemProps {
+	as?: React.ElementType
+	children: React.ReactNode
+	className?: string
+	translateX?: number | string
+	translateY?: number | string
+	translateZ?: number | string
+	rotateX?: number | string
+	rotateY?: number | string
+	rotateZ?: number | string
+}
 export const CardItem = ({
 	as: Tag = 'div',
 	children,
@@ -105,17 +114,7 @@ export const CardItem = ({
 	rotateY = 0,
 	rotateZ = 0,
 	...rest
-}: {
-	as?: React.ElementType
-	children: React.ReactNode
-	className?: string
-	translateX?: number | string
-	translateY?: number | string
-	translateZ?: number | string
-	rotateX?: number | string
-	rotateY?: number | string
-	rotateZ?: number | string
-}) => {
+}: CardItemProps) => {
 	const ref = useRef<HTMLDivElement>(null)
 	const [isMouseEntered] = useMouseEnter()
 

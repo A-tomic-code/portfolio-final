@@ -96,7 +96,7 @@ export const InfiniteMovingCards = ({
 			>
 				{items.map((skill) => (
 					<li
-						className="w-[150px] h-[150px] relative flex justify-center items-center rounded-2xl flex-shrink-0 border border-slate-700 p-2 bg-white bg-opacity-5  backdrop-blur-lg"
+						className="w-[150px] h-[150px] relative flex justify-center items-center rounded-2xl flex-shrink-0 border border-sky-950 p-2 bg-white bg-opacity-5  backdrop-blur-lg"
 						key={skill.name}
 					>
 						<article className="w-full h-full relative z-20 flex flex-col justify-center items-center gap-4 ">

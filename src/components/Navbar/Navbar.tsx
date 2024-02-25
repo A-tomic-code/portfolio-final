@@ -58,11 +58,10 @@ export const Navbar = ({ bgClear }: NavbarProps) => {
 						{NAV_LINKS.map((link, index) => (
 							<li key={index}>
 								<a
-									href="#"
 									onClick={link.onClick}
-									className={`block py-2   transition-all duration-300 ${
+									className={`block py-2 transition-all duration-300 cursor-pointer tracking-wider font-extrabold hover:-translate-x-3 hover:scale-105 ${
 										bgClear
-											? 'text-gray-200 hover:text-gray-500'
+											? 'text-gray-200 hover:text-primary'
 											: 'text-primary hover:text-gray-100'
 									}`}
 								>

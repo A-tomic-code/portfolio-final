@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar/Navbar'
 import { SkillsGrid } from './components/SkillsGrid/SkillsGrid'
 import { Content } from './components/layout/Content/Content'
 import { Header } from './components/layout/Header/Header'
+import { WavyBackground } from './components/WavyBackground'
 
 function App() {
 	const contentRef = useRef<HTMLDivElement>(null)
@@ -46,6 +47,13 @@ function App() {
 				<Header />
 				<SkillsGrid />
 				<Content />
+				<WavyBackground
+					colors={['#0c4a6e', '#115e59', '#1e293b', '#6b21a8']}
+					blur={5}
+					waveOpacity={0}
+					waveWidth={2}
+					speed="slow"
+				/>
 			</div>
 		</main>
 	)
