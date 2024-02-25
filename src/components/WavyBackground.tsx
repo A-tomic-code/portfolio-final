@@ -1,10 +1,10 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import { ReactNode, useEffect, useRef } from 'react'
 import { createNoise3D } from 'simplex-noise'
 import { cn } from '../utils/utils'
 
 interface WavyBackgroundProps {
-	children?: Element | JSX.Element | JSX.Element[] | string | null
+	children?: ReactNode
 	className?: string
 	containerClassName?: string
 	colors?: string[]

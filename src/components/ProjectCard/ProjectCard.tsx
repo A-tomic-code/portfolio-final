@@ -1,12 +1,8 @@
+import { Project } from '../../utils/utils'
 import { CardBody, CardContainer, CardItem } from '../3dCard'
 
 interface ProjectCardProps {
-	data: {
-		title: string
-		desc: string
-		img: string
-		gitUrl: string
-	}
+	data: Project
 }
 export const ProjectCard = ({ data }: ProjectCardProps) => {
 	const { title, desc, img, gitUrl } = data

@@ -1,5 +1,4 @@
 import { ProjectCard } from '../../components/ProjectCard/ProjectCard'
-import { ThreeDCardDemo } from '../../components/ThreeDCardDemo'
 import { PROJECTS } from '../../utils/utils'
 
 export const Projects = () => {

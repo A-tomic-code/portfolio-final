@@ -12,16 +12,21 @@ import nodeLogo from '../assets/logo-node.svg'
 import phpLogo from '../assets/logo-php.svg'
 import pythonLogo from '../assets/logo-python.svg'
 
-export const PROJECTS = [
+export interface Project {
+	url: string
+	gitUrl: string
+	img: string
+	title: string
+	desc: JSX.Element
+}
+
+export const PROJECTS: Project[] = [
 	{
 		url: 'https://rickymorty-apiclient.netlify.app/',
 		gitUrl: 'https://github.com/A-tomic-code/Rick-y-Morty-API-Client',
 		img: rickYMorty,
-		title: (
-			<>
-				Rick y Morty <span className="text-secondary">API Client</span>.
-			</>
-		),
+		title: 'Rick y Morty API Client',
+
 		desc: (
 			<>
 				Este proyecto es un{' '}
