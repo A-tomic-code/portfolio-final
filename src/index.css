@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-family: 'Roboto Slab', 'Roboto', 'system-ui';
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -26,4 +32,12 @@ body {
 	min-width: 320px;
 	width: 100vw;
 	min-height: 100vh;
+}
+
+.font-roboto {
+	font-family: 'Roboto', 'system-ui';
+}
+
+.font-roboto-slab {
+	font-family: 'Roboto Slab', 'system-ui';
 }

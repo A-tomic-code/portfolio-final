@@ -23,15 +23,10 @@ export default {
 		...defaultTheme,
 		extend: {
 			animation: {
-				['infinite-slider']: 'infiniteSlider 3s linear infinite',
 				scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
 			},
 
 			keyframes: {
-				infiniteSlider: {
-					'0%': { transform: 'translateX(0)' },
-					'100%': { transform: 'translateX(-220px)' },
-				},
 				scroll: {
 					to: {
 						transform: 'translate(calc(-50% - 0.5rem))',
@@ -41,7 +36,6 @@ export default {
 			colors: {
 				...colors,
 				primary: '#0369a1',
-				'dark-2': '#171D29',
 			},
 		},
 	},

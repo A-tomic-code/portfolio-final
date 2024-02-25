@@ -19,13 +19,9 @@ function App() {
 		}
 
 		const onObserve: IntersectionObserverCallback = (entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					setNavBarBgStyle(false)
-				} else {
-					setNavBarBgStyle(true)
-				}
-			})
+			entries[0].isIntersecting
+				? setNavBarBgStyle(false)
+				: setNavBarBgStyle(true)
 		}
 		const observer = new IntersectionObserver(onObserve, observeroptions)
 
@@ -34,7 +30,10 @@ function App() {
 
 	return (
 		<main className="flex flex-col justify-start items-center gap-4 w-full ">
-			<div className="w-full h-0 " ref={contentRef}></div>
+			{/* INTERSECTION OBSERVER FLAG */}
+			<div className="w-full h-0 " ref={contentRef} />
+
+			{/* NAVBAR */}
 			<div
 				className="w-full sticky top-0 z-50 -mt-4"
 				ref={navBarContainerRef}
@@ -42,6 +41,7 @@ function App() {
 				<Navbar bgClear={navbarClear} />
 			</div>
 
+			{/* PAGE CONTENT */}
 			<div className="pageContent flex flex-col justify-start items-center gap-6 max-w-[1400px] w-full py-6 px-24">
 				<Header />
 				<SkillsGrid />

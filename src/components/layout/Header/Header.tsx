@@ -20,14 +20,13 @@ export const Header = () => {
 						</p>
 					</div>
 
-					<p>
-						Con un enfoque en la creación de experiencias web
-						cautivadoras y una sólida formación en distintas
-						tecnologías me dedico a dar vida a diseños creativos y
-						funcionales. Mi objetivo principal es encontrar el
-						equilibrio perfecto entre la estética visual y la
-						usabilidad, para ofrecer a los usuarios una experiencia
-						única y memorable.
+					<p className=" text-lg font-roboto font-normal leading-8 tracking-wider px-4">
+						Sumérgete en un viaje a través de mi universo digital,
+						donde la creatividad se une a la tecnología para dar
+						vida a sitios web cautivadores y experiencias
+						memorables. Explora mi colección de proyectos, cada uno
+						de ellos representa una historia de colaboración,
+						innovación y pasión por el desarrollo web.
 					</p>
 
 					<div className="flex w-full h-30 justify-end gap-4">
